@@ -53,6 +53,7 @@ class ViewController: UIViewController {
         searchBar.inputAccessoryView = keyboardToolbar
     }
 
+    /// Dismiss keyboard
     @objc func dismissKeyboard() {
         searchBar.resignFirstResponder()
     }
@@ -64,6 +65,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .secondarySystemBackground
     }
     
+    /// Set up the collectionview with correct cell, layout, and data
     private func setUpCollectionView() {
         let view = UIView()
         
